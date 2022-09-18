@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new client</title>
+    <!--Jquery library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Style Bootstrap 4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!--Awesome font CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- for checking validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+    <!--Custom style - Exteral file-->
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <!--Javascript External File-->
+    <script rel="stylesheet" src="indext.js" type="text/javascript"> </script>
+</head>
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-12 text-center">
+                <h5>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h5>
+            </div>
+            <div class = "col-sm-12 text-center">
+                <h5 class = "text-underline">Độc lập - Tự do - Hạnh phúc</h5>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-12 text-center">
+                <h5>TỜ KHAI THAY ĐỔI THÔNG TIN CƯ TRÚ</h5>
+            </div>
+            <div class = "col-sm-12 text-center">
+                <h7><b>Kính gửi:</b> Công an phường Long Bình, thành phố Biên Hòa, tỉnh Đồng Nai</h7>
+            </div>
+        </div>
+        <!--Form action-->
+        <div class = "row">
+            <div class = "col-sm-12">
+                <form autocomplete="on" id = "form-residenceDeclaration" action="https://www.apispreadsheets.com/table/XhEZo59rAwqqzA6H/">
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label>1. Họ, chữ đệm và tên: </label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <div class = "row">
+                                <input autocomplete="on" allLetterUpcaseStandilizer= "true" requiredCheck = "true" id = "inp-fullname" name = "fullname" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-fullname" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label>2. Năm sinh: </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class = "row">
+                                
+                                <div class = "col-sm-9">
+                                    <div class = "row">
+                                        <input isBirthyear = "true" autocomplete="on" placeholder="... ví dụ: 1998 ..." type = "number" length = "8" requiredCheck = "true" id = "inp-birthyear" name = "birthyear" class = "form-control"></input>
+                                    </div>
+                                   <div class = "row text-center">
+                                        <label for = "inp-birthyear" class = "is-invalid min-h-1"></label>
+                                   </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-3">
+                            <div class = "row">
+                                <div class = "col-sm-5">
+                                    <label>3. Giới tính: </label>
+                                </div>
+                                <div class = "col-sm-7">
+                                    <div class = "row">
+                                        <select autocomplete="on" requiredCheck = "true" id = "slt-sex" name = "sex" class = "form-control">
+                                            <option value = "">---Chọn---</option>
+                                            <option value = "Nam">Nam</option>
+                                            <option value = "Nữ">Nữ</option>
+                                        </select>
+                                    </div>
+                                   <div class = "row text-center">
+                                        <label for = "inp-sex" class = "is-invalid min-h-1"></label>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label>4. Số định danh cá nhân/CMND: </label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <div class = "row">
+                                <input isCitizenId = "true" autocomplete="on" placeholder = "... số CCCD, nếu KHÔNG CÓ thì điền số CMND ..." type = "number" requiredCheck = "true" id = "inp-citizenId" name = "citizenId" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-citizenId" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label>7. Hộ khẩu thường trú (phải đủ 4 cấp): </label>
+                        </div>
+                        <div class = "col-sm-2">
+                            <div class = "row">
+                                <input  autocomplete="on" localUpperCase = "true" placeholder="Số nhà hoặc đường" requiredCheck = "true" id = "inp-addressReg" name = "addressReg" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-addressReg" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                        <div class = "col-sm-2">
+                            <div class = "row">
+                                <input autocomplete="on" localUpperCase = "true" placeholder="Xã" requiredCheck = "true" id = "inp-communeReg" name = "communeReg" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-communeReg" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                        <div class = "col-sm-2">
+                            <div class = "row">
+                                <input autocomplete="on" localUpperCase = "true" placeholder="Huyện" placeholder="Xã" requiredCheck = "true" id = "inp-districtReg" name = "districtReg" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-districtReg" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                        <div class = "col-sm-2">
+                            <div class = "row">
+                                <input autocomplete="on" localUpperCase = "true" placeholder="Tỉnh" requiredCheck = "true" id = "inp-provinceReg" name = "provinceReg" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-provinceReg" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                    </div>
+                   
+                    
+                        <div class = "row">
+                            <div class = "col-sm-3">
+                                <label>9. Nơi ở hiện tại: </label>
+                            </div>
+                            <div class = "col-sm-2">
+                                <div class = "row">
+                                    <input value = "125A, tổ 26" readonly autocomplete="on" placeholder = "Số nhà, đường, tổ" requiredCheck = "true" id = "inp-provinceCur" name = "provinceCur" class = "form-control" tabindex="-1"></input>
+                                </div>
+                               <div class = "row text-center">
+                                    <label for = "inp-provinceCur" class = "is-invalid min-h-1"></label>
+                               </div>
+                            </div>
+                            <div class = "col-sm-2">
+                                <div class = "row">
+                                    <input value = "6" readonly autocomplete="on" placeholder = "Khu phố" requiredCheck = "true" id = "inp-town" name = "town" class = "form-control" tabindex="-1"></input>
+                                </div>
+                               <div class = "row text-center">
+                                    <label for = "inp-town" class = "is-invalid min-h-1"></label>
+                               </div>
+                            </div>
+                            <div class = "col-sm-2">
+                                <div class = "row">
+                                    <input autocomplete="on" requiredCheck = "true" id = "inp-ward" name = "ward" class = "form-control" value="Long Bình" readonly tabindex= -1></input>
+                                </div>
+                               <div class = "row text-center">
+                                    <label for = "inp-ward" class = "is-invalid min-h-1"></label>
+                               </div>
+                            </div>
+                    </div>
+            
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label>12. Thời gian đến ở trọ: </label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <div class = "row">
+                                <input autocomplete="on" type = "date" requiredCheck = "true" id = "inp-rentDate" name = "rentDate" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-rentDate" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label>13. Ghi chú (không cần thiết): </label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <div class = "row">
+                                <input autocomplete="on" id = "inp-notice" placeholder="... có hoặc để trống ..." name = "notice" class = "form-control"></input>
+                            </div>
+                           <div class = "row text-center">
+                                <label for = "inp-notice" class = "is-invalid min-h-1"></label>
+                           </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class = "col-sm-12 text-center">
+                <button id = "btn-send" class = "btn btn-success btn-block" type = "submit">Gửi</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+

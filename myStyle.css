@@ -1,0 +1,78 @@
+nav{
+    background-color: orange;
+}
+.page-slogan{
+    margin-top: 1rem;
+    color: orange;
+}
+h3.page-slogan{
+    font-weight: bolder;
+}
+.pl-8{
+    padding-left: 8rem !important;
+}
+.pr-8{
+    padding-right: 8rem !important;
+}
+h4{
+    text-align: center;
+}
+hr{
+    border-top: 1px solid orange;
+}
+div.card{
+    border: 1px solid orange;
+}
+.bg-orange-spectrum-1{
+    background-color: lightgoldenrodyellow;
+}
+.bg-orange-spectrum-2{
+    background-color: yellow;
+}
+.bg-orange-spectrum-3{
+    background-color: lightsalmon;
+}
+.bg-orange-spectrum-4{
+    background-color: orange;
+}
+.bg-orange{
+    background-color: orange;
+}
+.error{
+    color: red;
+}
+.success{
+color: rgb(101, 244, 101);
+}
+label.is-invalid {
+    background: #ffe6eb;
+    color: red;
+}
+
+input.is-valid{
+    background: lightcyan;
+    color: green;
+}
+label.is-valid{
+    color: green;
+    
+}
+select.is-valid{
+    background: lightcyan;
+    color: green;
+}
+.form{
+    padding: 0.625rem;
+    border: solid 0.0625rem orange;
+}
+.min-h-1{
+    min-height: 1rem !important;
+    margin-bottom: 0.5rem;
+}
+.min-h-8{
+    min-height:8rem !important;
+}
+.text-underline{
+    padding-bottom: 0.3125rem !important;
+    text-decoration: underline 1px black;
+}
